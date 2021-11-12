@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cool Webpage</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <hr />
+
+    <h2>Paragraph</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ex
+      provident? Vel voluptate quod, quam quaerat quibusdam quas sequi
+      exercitationem vitae, nulla dolorem illo officiis, blanditiis voluptatibus
+      perspiciatis suscipit enim!
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nam
+      eligendi iste itaque aut suscipit <br />
+      molestiae hic maiores repellendus voluptates, quis nemo tenetur dolorum
+      laborum eius minus voluptatum earum facilis?
+    </p>
+
+    <hr />
+    <h2>Inline Element</h2>
+    <p>
+      Text <strong>Bold Text</strong>
+
+      <em>Italic Text</em>
+
+      <span style="text-decoration: underline">Underlined Text</span>
+
+      <abbr title="This is abbr">Something Cool</abbr>
+    </p>
+
+    <!-- This is comment. -->
+    <hr />
+
+    <h2>Link</h2>
+
+    <p>To google: <a href="https://www.google.com">Google</a></p>
+    <p>
+      To google:
+      <a href="https://www.google.com" target="_blank">Google (New Tab)</a>
+    </p>
+
+    <hr />
+
+    <h2>Image</h2>
+    <img
+      src="https://images.unsplash.com/photo-1636583201765-ccd0405c43df?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80"
+      alt="This is a very important image."
+      height="150"
+      title="This is another text."
+    />
+    <hr />
+
+    <h2>List</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+    <hr />
+
+    <h2>Table</h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Col1</td>
+          <td>Col2</td>
+          <td>Col3</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Item 11</td>
+          <td>Item 12</td>
+          <td>Item 13</td>
+        </tr>
+        <tr>
+          <td>Item 21</td>
+          <td>Item 22</td>
+          <td>Item 23</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+
+    <h2>Form</h2>
+
+    <form>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Input Your Name"
+        value="Nirand"
+        name="name"
+      />
+      <br />
+      <br />
+
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        id="age"
+        placeholder="Input Your Age"
+        value="3"
+        name="age"
+      />
+
+      <br />
+      <br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        maxlength="6"
+        placeholder="6 Characters"
+        name="password"
+      />
+
+      <p><strong>Gender</strong></p>
+      <label for="r1">Male</label>
+      <input type="radio" id="r1" name="gender" value="male" />
+      <label for="r2">Female</label>
+      <input type="radio" id="r2" name="gender" value="female" />
+
+      <p><strong>Mode of Transportation</strong></p>
+      <label for="c1">Bike</label>
+      <input type="checkbox" id="c1" name="transport" value="Bike" />
+
+      <label for="c2">Car</label>
+      <input type="checkbox" id="c2" name="transport" value="Car" />
+
+      <label for="c3">Airplane</label>
+      <input type="checkbox" id="c3" name="transport" value="Airplane" />
+
+      <p><strong>Preferences</strong></p>
+
+      <select name="preference" id="select">
+        <option disabled selected value="">-- select ---</option>
+        <option value="no">No class</option>
+        <option value="online">Online class</option>
+        <option value="onsite">On-site class</option>
+      </select>
+
+      <p><strong>Comment</strong></p>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
