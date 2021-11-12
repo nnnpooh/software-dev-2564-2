@@ -1,0 +1,58 @@
+body {
+  font-family: prompt;
+  font-size: 16px;
+}
+
+h1 {
+  color: red;
+  font-weight: 100;
+}
+
+p,
+li {
+  color: rgb(0, 0, 0);
+}
+
+li {
+  list-style-type: circle;
+}
+
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+li.special {
+  color: rgb(37, 184, 127);
+  font-weight: bold;
+}
+
+.special {
+  color: rgb(138, 41, 202);
+  font-weight: 100;
+}
+
+li em {
+  color: rebeccapurple;
+}
+
+h1 + p {
+  color: orangered;
+}
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
