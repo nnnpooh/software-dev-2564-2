@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <hr />
+    <h2>Paragraph</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+      perspiciatis. Inventore tempore dolore natus animi iste! Beatae tempora
+      quaerat nihil commodi fugit nisi delectus ullam accusamus, nam officiis
+      maxime eius.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim
+      consectetur asperiores eum magni, praesentium reiciendis dolorum ipsum
+      similique exercitationem maxime mollitia vel voluptas, soluta ipsa. Enim
+      nihil esse blanditiis!
+    </p>
+
+    <h2>Paragraph with line break</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, dolor.
+      Itaque blanditiis quam, ut ea non nam fuga accusamus alias temporibus unde
+      officia deserunt eos sunt aspernatur. Quae, blanditiis deleniti? <br />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+      eaque illum inventore iste temporibus sint quis adipisci distinctio
+      suscipit error. Repudiandae eos nostrum quas nobis minus porro excepturi
+      quo dicta.
+    </p>
+    <hr />
+    <h2>Inline elements</h2>
+    <p>
+      <strong>Bold text</strong> <em>Italic text</em>
+      <span style="text-decoration: underline">Underlined text</span>
+      <abbr title="Hypertext Markup Language">HTML</abbr>
+      <q>Success is a journey not a destination.</q>
+    </p>
+
+    <!-- This Comment -->
+    <hr />
+
+    <h2>Link</h2>
+    <p><a href="https://www.google.com">Google</a> (leave the page)</p>
+    <p><a href="https://www.google.com" target="_blank">Google</a> (new tab)</p>
+    <hr />
+    <h2>Image</h2>
+    <img
+      src="https://images.unsplash.com/photo-1612151855475-877969f4a6cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
+      alt="Random Photos"
+      title="Very Cool"
+      height="150"
+    />
+    <hr />
+    <h2>List</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+    </ul>
+
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <hr />
+    <h2>Table</h2>
+    <table border="1">
+      <tr>
+        <th>Person</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ann</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Susie</td>
+        <td>22</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>Form</h2>
+
+    <form>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+      /><br /><br />
+
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        value="12"
+        max="25"
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        value=""
+        maxlength="6"
+        placeholder="6 Characters"
+      />
+
+      <p><strong>Gender</strong></p>
+      <label for="r1">Male</label>
+      <input type="radio" id="r1" name="radio1" value="male" />
+      <label for="r2">Female</label>
+      <input type="radio" id="r2" name="radio1" value="female" />
+
+      <p><strong>Mode of transportation:</strong></p>
+      <label for="c1">Bike</label>
+      <input type="checkbox" id="c1" name="form1" value="Bike" />
+      <label for="c2">Car</label>
+      <input type="checkbox" id="c2" name="form1" value="Car" />
+      <label for="c3">Plane</label>
+      <input type="checkbox" id="c3" name="form1" value="Plane" />
+      <label for="c4">Train</label>
+      <input type="checkbox" id="c4" name="form1" value="Train" />
+
+      <p><strong>Preferences</strong></p>
+      <select name="select1">
+        <option disabled selected value>-- select an option --</option>
+        <option value="small">No class</option>
+        <option value="family">Online class</option>
+        <option value="lux">On-site class</option>
+      </select>
+      <br /><br />
+
+      <label for="comment"><strong>Comment</strong></label> <br />
+      <textarea id="comment" rows="10" cols="30" name="comment1"></textarea>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" onclick="msg()">Alert</button>
+    </form>
+
+    <script>
+      function msg() {
+        alert('Hello world!');
+      }
+    </script>
+  </body>
+</html>
