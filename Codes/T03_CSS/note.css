@@ -1,12 +1,15 @@
+/* Select all body tag */
 body {
   font-size: 16px;
 }
 
+/* Select all h1 class */
 h1 {
   color: red;
   font-weight: 100;
 }
 
+/* Select p and li tags */
 p,
 li {
   color: rgb(0, 0, 0);
@@ -16,42 +19,47 @@ li {
   list-style-type: circle;
 }
 
+/* Select class special */
 .special {
   color: orange;
   font-weight: bold;
 }
 
+/* Select class special in li tag*/
 li.special {
   color: rgb(37, 184, 127);
   font-weight: bold;
 }
 
+/* Order matters */
 .special {
   color: rgb(138, 41, 202);
   font-weight: 100;
 }
 
+/* Select em tag inside li tag */
 li em {
   color: rebeccapurple;
 }
 
+/* Select p tag that comes after h1 tag */
 h1 + p {
   color: orangered;
 }
 
-a:link {
+/* a:link {
   color: pink;
-}
+} */
 
-a:visited {
+/* a:visited {
   color: green;
-}
-a:hover {
+} */
+/* a:hover {
   text-decoration: none;
-}
+} */
 
-body h1 + p .special {
+/* body h1 + p .special {
   color: yellow;
   background-color: black;
   padding: 5px;
-}
+} */
