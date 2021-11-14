@@ -1,0 +1,57 @@
+div#div1 h1,
+div#div1 ul,
+div#div1 li,
+div#div1 p {
+  background-color: turquoise;
+}
+
+div#div2 h1,
+div#div2 ul,
+div#div2 li,
+div#div2 p {
+  /* display: inline-block; */
+  display: inline;
+  background-color: turquoise;
+  border-style: solid;
+  border-color: gray;
+  border-width: thin;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box1,
+.box2 {
+  background-color: blue;
+  border-style: solid;
+  border-width: thin;
+  padding: 10px;
+}
+
+.flex-wrapper > .box1 {
+  flex: 1;
+  /* flex: 200px; */
+}
+
+.flex-wrapper > .box2 {
+  flex: 1;
+  /* flex: 300px; */
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+}
+
+.box3 {
+  background-color: greenyellow;
+  border-style: solid;
+  border-width: thin;
+  padding: 10px;
+  grid-column: 2/4;
+}

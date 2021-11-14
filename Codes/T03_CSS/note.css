@@ -25,13 +25,13 @@ li {
   font-weight: bold;
 }
 
-/* Select class special in li tag*/
+/* Select li with class special*/
 li.special {
   color: rgb(37, 184, 127);
   font-weight: bold;
 }
 
-/* Order matters */
+/* Specificity and order matters */
 .special {
   color: rgb(138, 41, 202);
   font-weight: 100;
@@ -39,7 +39,7 @@ li.special {
 
 /* Select em tag inside li tag */
 li em {
-  color: rebeccapurple;
+  color: brown;
 }
 
 /* Select p tag that comes after h1 tag */
@@ -47,19 +47,22 @@ h1 + p {
   color: orangered;
 }
 
-/* a:link {
+/* Psudeo-class selector */
+a:link {
   color: pink;
-} */
+}
 
-/* a:visited {
+a:visited {
   color: green;
-} */
-/* a:hover {
-  text-decoration: none;
-} */
+}
 
-/* body h1 + p .special {
+a:hover {
+  text-decoration: none;
+}
+
+/* Select class special that is a child of <p> that comes after <h1> that is a child of <body> */
+body h1 + p .special {
   color: yellow;
   background-color: black;
   padding: 5px;
-} */
+}
