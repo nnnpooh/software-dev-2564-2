@@ -37,9 +37,14 @@ li.special {
   font-weight: 100;
 }
 
-/* Select em tag inside li tag */
+/* Select all em tag inside li tag */
 li em {
   color: brown;
+}
+
+/* Select immediate child of li tag */
+li > em {
+  color: blue;
 }
 
 /* Select p tag that comes after h1 tag */
@@ -65,4 +70,12 @@ body h1 + p .special {
   color: yellow;
   background-color: black;
   padding: 5px;
+}
+
+a::after {
+  content: " 🧲";
+}
+
+a[target]::after {
+  content: " 🔥";
 }
