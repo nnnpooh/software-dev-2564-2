@@ -11,15 +11,14 @@
     <div id="div1">
       <h1>Block elements</h1>
       <p>I love my cat.</p>
-
       <ul>
         <li>Buy cat food</li>
         <li>Exercise</li>
         <li>Cheer up friend</li>
       </ul>
       <p>The end!</p>
-      <hr />
     </div>
+    <hr />
 
     <div id="div2">
       <h1>Inline Display</h1>
@@ -31,25 +30,77 @@
         <li>Cheer up friend</li>
       </ul>
       <p>The end!</p>
-      <hr />
+    </div>
+    <hr />
+
+    <h1>Inline Block</h1>
+    <div>
+      "Inline" does not work.
+      <div id="btn">"Inline-Block" works.</div>
+    </div>
+    <hr />
+
+    <h1>Flex</h1>
+    <div class="flex-wrapper">
+      <div class="flexbox bg-bd flex-text-box">One</div>
+      <div class="flexbox bg-bd flex-text-box">Two</div>
+      <div class="flexbox flexbox--wide bg-bd flex-text-box">Three</div>
+    </div>
+    <hr />
+
+    <h1>Grid</h1>
+    <div class="grid-wrapper">
+      <div class="gridbox bg-bd grid-text-box">One</div>
+      <div class="gridbox bg-bd grid-text-box">Two</div>
+      <div class="gridbox bg-bd grid-text-box">Three</div>
+      <div class="gridbox bg-bd grid-text-box">Four</div>
+      <div class="gridbox bg-bd grid-text-box">Five</div>
+      <div class="gridbox bg-bd grid-text-box">Six</div>
+      <div class="gridbox bg-bd grid-text-box">Seven</div>
+      <div class="gridbox gridbox--wide bg-bd grid-text-box">Eight</div>
     </div>
 
-    <div class="flex-wrapper">
-      <div class="box1">One</div>
-      <div class="box1">Two</div>
-      <div class="box2">Three</div>
+    <h1>Float</h1>
+
+    <div class="float-box">Float</div>
+
+    <p id="float-paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
+      aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
+      pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc,
+      at ultricies tellus laoreet sit amet.
+    </p>
+
+    <hr />
+    <h1>Relative position</h1>
+
+    <div class="relative">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores iste,
+        dolore obcaecati excepturi placeat adipisci, labore harum rerum enim cum
+      </p>
+
+      <p class="relative-positioned">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores iste,
+        dolore obcaecati excepturi placeat adipisci, labore harum rerum enim cum
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores iste,
+        dolore obcaecati excepturi placeat adipisci, labore harum rerum enim cum
+      </p>
     </div>
 
     <hr />
-    <div class="grid-wrapper">
-      <div class="box1">One</div>
-      <div class="box1">Two</div>
-      <div class="box1">Three</div>
-      <div class="box1">Four</div>
-      <div class="box1">Five</div>
-      <div class="box1">Six</div>
-      <div class="box1">Seven</div>
-      <div class="box3">Eight</div>
+
+    <h1>Absolute Position</h1>
+    <div class="relative-parent bg-bd grid-text-box">
+      <div>Relative Parent</div>
+      <div class="absolute"><span class="material-icons">delete</span></div>
+    </div>
+
+    <div class="fix-positioned">
+      <span class="material-icons icon-large">add_circle</span>
     </div>
   </body>
 </html>

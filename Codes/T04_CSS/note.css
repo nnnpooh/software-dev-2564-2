@@ -1,46 +1,88 @@
+/* https://www.schemecolor.com/kids-with-pastels.php */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root {
+  --blue: #aae9e5;
+  --pink: #fa94bd;
+  --pink-darker: #e6548e;
+  --gray: rgb(105, 105, 105);
+  --gray-darker: rgb(56, 56, 56);
+}
+
+body {
+  font-family: prompt;
+  color: var(--gray-darker);
+  font-size: 0.9rem;
+}
+
+hr {
+  margin: 2em 0;
+  border: 1px solid #ffeda9;
+}
+
+/* Display Block */
+
 div#div1 h1,
 div#div1 ul,
 div#div1 li,
 div#div1 p {
-  background-color: turquoise;
+  background-color: var(--blue);
 }
 
+/* Display Inline */
 div#div2 h1,
 div#div2 ul,
 div#div2 li,
 div#div2 p {
-  /* display: inline-block; */
   display: inline;
-  background-color: turquoise;
-  border-style: solid;
-  border-color: gray;
-  border-width: thin;
+  outline: 1px var(--gray) solid;
+}
+
+/* Display inline-block */
+#btn {
+  display: inline-block;
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+  background-color: var(--pink);
+  color: white;
+}
+#btn:hover {
+  background-color: var(--pink-darker);
+  cursor: pointer;
+}
+
+/* Flex */
+.bg-bd {
+  background-color: var(--pink);
+  border: solid var(--gray) thin;
+  border-radius: 0.5rem;
 }
 
 .flex-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.box1,
-.box2 {
-  background-color: blue;
-  border-style: solid;
-  border-width: thin;
+.flexbox {
   padding: 10px;
-}
-
-.flex-wrapper > .box1 {
   flex: 1;
-  /* flex: 200px; */
+  max-width: 20rem;
 }
 
-.flex-wrapper > .box2 {
-  flex: 1;
-  /* flex: 300px; */
+.flexbox--wide {
+  flex: 2;
 }
 
+.flex-text-box {
+  text-align: center;
+  color: white;
+  display: inline;
+}
+
+/* Grid */
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -48,10 +90,72 @@ div#div2 p {
   grid-gap: 10px;
 }
 
-.box3 {
-  background-color: greenyellow;
-  border-style: solid;
-  border-width: thin;
+.gridbox {
   padding: 10px;
+}
+
+.gridbox--wide {
   grid-column: 2/4;
+}
+
+.grid-text-box {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Float */
+.float-box {
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  padding: 1em;
+  margin-bottom: 2rem;
+}
+
+/* On larger screen you need to clear it. */
+p#float-paragraph + hr {
+  clear: left;
+}
+
+/* Relative positioned */
+
+div.relative p {
+  outline: 1px var(--gray) solid;
+}
+
+.relative-positioned {
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+  background-color: var(--blue);
+}
+
+/* Absolute positioned */
+
+.relative-parent {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.fix-positioned {
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+}
+
+.icon-large {
+  font-size: 4rem;
 }
