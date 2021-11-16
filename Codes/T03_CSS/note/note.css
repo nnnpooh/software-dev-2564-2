@@ -73,9 +73,9 @@ body h1 + p .special {
 }
 
 a::after {
-  content: " 🧲";
+  content: ' 🧲';
 }
 
 a[target]::after {
-  content: " 🔥";
+  content: ' 🔥';
 }
