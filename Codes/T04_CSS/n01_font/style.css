@@ -1,5 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&display=swap"); */
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 @font-face {
   font-family: myLocalFont;
   src: url(./font/Mali-Regular.ttf);
@@ -30,11 +29,11 @@ body {
 }
 
 .hosted-normal {
-  font-family: "KoHo", sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-weight: normal;
 }
 
 .hosted-bold {
-  font-family: "KoHo", sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-weight: bold;
 }
