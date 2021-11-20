@@ -1,25 +1,40 @@
+/* @import url("https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&display=swap"); */
+
 @font-face {
-  font-family: myFont;
+  font-family: myLocalFont;
   src: url(./font/Mali-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: myFont;
+  font-family: myLocalFont;
   src: url(./font/Mali-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 
 body {
-  font-family: myFont;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-.normal {
+
+.local-normal {
+  font-family: myLocalFont;
   font-weight: normal;
 }
 
-.bold {
+/* If you don't do this, you will still get bold font.  But it is done by browser.  This is called faux bold. */
+.local-bold {
+  font-family: myLocalFont;
+  font-weight: bold;
+}
+
+.hosted-normal {
+  font-family: "KoHo", sans-serif;
+  font-weight: normal;
+}
+
+.hosted-bold {
+  font-family: "KoHo", sans-serif;
   font-weight: bold;
 }
