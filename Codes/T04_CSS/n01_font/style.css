@@ -1,0 +1,25 @@
+@font-face {
+  font-family: myFont;
+  src: url(./font/Mali-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./font/Mali-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: myFont;
+  font-size: 2rem;
+}
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
