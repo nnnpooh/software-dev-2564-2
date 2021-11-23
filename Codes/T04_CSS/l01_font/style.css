@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+@font-face {
+  font-family: myLocalFont;
+  src: url(./fonts/Mali-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: myLocalFont;
+  src: url(./fonts/Mali-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+.local-normal {
+  font-family: myLocalFont;
+}
+
+.local-bold {
+  font-family: myLocalFont;
+  font-weight: bold;
+}
+
+.hosted-normal {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.hosted-bold {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700;
+}
