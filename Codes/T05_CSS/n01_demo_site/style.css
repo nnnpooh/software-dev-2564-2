@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('fa/css/all.css');
+
+:root {
+  --blue: #71dfe7;
+  --blue-darker: #42a8af;
+  --gray: rgb(59, 59, 59);
+  --gray-lighter: rgb(170, 170, 170);
+  --white: rgb(240, 240, 240);
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: rgb(230, 230, 230);
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  margin: 0.5em 1em;
+  font-size: 2em;
+  transition: transform 150ms;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5em;
+  color: var(--white);
+  margin: 0 2em;
+}
+
+.nav-item {
+  transition: background-color 150ms, color 250ms;
+  display: flex;
+  align-items: center;
+  padding: 0em 0.5em;
+}
+
+.nav-item:hover {
+  background-color: var(--blue);
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.navbar-mobile {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    color: var(--white);
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem;
+  }
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.418)),
+    url(https://source.unsplash.com/random/1920x600);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-title {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card-item {
+  background-color: var(--white);
+  border-radius: 0.5em;
+  padding: 1em;
+  flex: 1;
+  flex-basis: 15em;
+  max-width: 25em;
+}
+
+.card-header {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gray);
+  text-align: center;
+}
+
+.card-sub-header {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--gray-lighter);
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
+  border-radius: 1em;
+  text-align: center;
+  transition: background-color 150ms;
+}
+
+li:hover {
+  background-color: var(--blue-darker);
+}
+
+li i {
+  margin-right: 1em;
+}
