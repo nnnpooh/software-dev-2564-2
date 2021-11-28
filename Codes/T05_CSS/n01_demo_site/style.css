@@ -2,14 +2,14 @@
 @import url('fa/css/all.css');
 
 :root {
+  --white: rgb(240, 240, 240);
+  --gray-lighter: rgb(170, 170, 170);
+  --gray: rgb(59, 59, 59);
+  --gray-darker: rgb(19, 19, 19);
   --blue-lighter: #c5e6e9;
   --blue: #71dfe7;
   --blue-darker: #42a8af;
   --blue-darkest: #2b7a80;
-  --gray: rgb(59, 59, 59);
-  --gray-lighter: rgb(170, 170, 170);
-  --gray-darker: rgb(19, 19, 19);
-  --white: rgb(240, 240, 240);
 }
 
 * {
@@ -90,10 +90,14 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 20em;
+  min-height: 22em;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 3;
+  clip-path: polygon(0% 0, 100% 0%, 100% calc(100% - 3vw), 0% 100%);
+  margin-bottom: -3vw;
 }
 
 .banner-title {
@@ -105,12 +109,15 @@ body {
 
 .container-stripe {
   background-color: var(--blue-lighter);
-  padding: 1rem;
-  margin: 0 auto;
+  padding: 2em 0;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(0% 0, 100% 0%, 100% calc(100% - 3vw), 0% 100%);
+  margin-bottom: -3vw;
 }
 
-.container {
-  width: 95%;
+.container-content {
+  width: 90%;
   margin: 2rem auto;
 }
 
@@ -140,10 +147,11 @@ body {
   color: var(--white);
   border: 0px;
   border-radius: 0.75rem;
+  transition: background-color 150ms, color 250ms;
 }
 
 .btn-group {
-  margin: 2rem 0;
+  margin: 2em 0;
 }
 
 .btn:hover {
@@ -169,9 +177,9 @@ body {
 }
 
 .stripe-right {
-  overflow: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 700px) {
@@ -186,6 +194,10 @@ body {
   .stripe-right {
     flex: 1;
   }
+}
+
+.container-card {
+  padding: 2em 0;
 }
 
 .card-wrapper {
