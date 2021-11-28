@@ -2,14 +2,21 @@
 @import url('fa/css/all.css');
 
 :root {
+  --blue-lighter: #c5e6e9;
   --blue: #71dfe7;
   --blue-darker: #42a8af;
   --blue-darkest: #2b7a80;
   --gray: rgb(59, 59, 59);
   --gray-lighter: rgb(170, 170, 170);
   --gray-darker: rgb(19, 19, 19);
-
   --white: rgb(240, 240, 240);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
 body {
@@ -96,6 +103,12 @@ body {
   text-align: center;
 }
 
+.container-stripe {
+  background-color: var(--blue-lighter);
+  padding: 1rem;
+  margin: 0 auto;
+}
+
 .container {
   width: 95%;
   margin: 2rem auto;
@@ -155,6 +168,12 @@ body {
   height: 100%;
 }
 
+.stripe-right {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 700px) {
   .stripe-wrapper {
     display: flex;
@@ -166,12 +185,6 @@ body {
   .stripe-left,
   .stripe-right {
     flex: 1;
-  }
-
-  .stripe-right {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
   }
 }
 
