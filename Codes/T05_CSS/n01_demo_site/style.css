@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 @import url('fa/css/all.css');
 
 :root {
   --blue: #71dfe7;
   --blue-darker: #42a8af;
+  --blue-darkest: #2b7a80;
   --gray: rgb(59, 59, 59);
   --gray-lighter: rgb(170, 170, 170);
+  --gray-darker: rgb(19, 19, 19);
+
   --white: rgb(240, 240, 240);
 }
 
@@ -95,7 +98,81 @@ body {
 
 .container {
   width: 95%;
-  margin: 1rem auto;
+  margin: 2rem auto;
+}
+
+.text-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--gray);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.emphasize {
+  font-size: 1.3em;
+  color: var(--blue-darker);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-body {
+  color: var(--gray);
+}
+
+.btn {
+  font-family: Prompt;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  color: var(--white);
+  border: 0px;
+  border-radius: 0.75rem;
+}
+
+.btn-group {
+  margin: 2rem 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+.btn-blue {
+  background-color: var(--blue-darker);
+}
+.btn-blue:hover {
+  background-color: var(--blue-darkest);
+}
+
+.btn-gray {
+  background-color: var(--gray);
+}
+.btn-gray:hover {
+  background-color: var(--gray-darker);
+}
+
+.img-responsive {
+  width: auto;
+  height: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .stripe-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .stripe-left,
+  .stripe-right {
+    flex: 1;
+  }
+
+  .stripe-right {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .card-wrapper {
