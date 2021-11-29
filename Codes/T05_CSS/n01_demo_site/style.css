@@ -7,9 +7,9 @@
   --gray: rgb(59, 59, 59);
   --gray-darker: rgb(19, 19, 19);
   --blue-lighter: #c5e6e9;
-  --blue: #71dfe7;
-  --blue-darker: #42a8af;
-  --blue-darkest: #2b7a80;
+  --blue: #64cbd3;
+  --blue-darker: #3c989e;
+  --blue-darkest: #25686d;
 }
 
 * {
@@ -126,10 +126,10 @@ body {
   font-weight: bold;
   color: var(--gray);
   margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
-.emphasize {
+.text-emphasize {
   font-size: 1.3em;
   color: var(--blue-darker);
   font-style: italic;
@@ -197,7 +197,17 @@ body {
 }
 
 .container-card {
-  padding: 2em 0;
+  padding: 3em 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-header > i {
+  font-size: 2.5rem;
+  margin-right: 0.75rem;
+  color: var(--blue-darker);
 }
 
 .card-wrapper {
