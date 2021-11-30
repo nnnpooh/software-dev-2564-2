@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('fa/css/all.css');
+
+:root {
+  --white: rgb(240, 240, 240);
+  --gray-lighter: rgb(170, 170, 170);
+  --gray: rgb(59, 59, 59);
+  --gray-darker: rgb(19, 19, 19);
+  --blue-lighter: #c5e6e9;
+  --blue: #64cbd3;
+  --blue-darker: #3c989e;
+  --blue-darkest: #25686d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: rgb(230, 230, 230);
+}
+
+.header {
+  background-color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  margin: 0.5em 1em;
+  font-size: 2em;
+  transition: transform 150ms;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: stretch;
+  color: var(--white);
+  gap: 1.5em;
+  margin: 0 2em;
+}
+
+.nav-item {
+  transition: background-color 150ms, color 250ms;
+  display: flex;
+  align-items: center;
+  padding: 0em 0.5em;
+}
+
+.nav-item:hover {
+  background-color: var(--blue);
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.navbar-mobile {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobile {
+    color: var(--white);
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem;
+  }
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(54, 136, 194, 0.5)),
+    url(https://source.unsplash.com/random/1920x600);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 22em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  clip-path: polygon(0% 0, 100% 0%, 100% calc(100% - 3vw), 0% 100%);
+  margin-bottom: -3vw;
+}
+
+.banner-title {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-stripe {
+  background-color: var(--blue-lighter);
+  padding: 2em 0;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(0% 0, 100% 0%, 100% calc(100% - 3vw), 0% 100%);
+  margin-bottom: -3vw;
+}
+
+.container-content {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.text-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--gray);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.text-emphasize {
+  font-size: 1.3em;
+  color: var(--blue-darker);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-body {
+  color: var(--gray);
+}
+
+.btn-group {
+  margin: 2em 0;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
+  color: var(--white);
+  border: 0px;
+  border-radius: 0.75rem;
+  transition: background-color 150ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: var(--blue-darker);
+}
+
+.btn-blue:hover {
+  background-color: var(--blue-darkest);
+}
+
+.btn-gray {
+  background-color: var(--gray);
+}
+
+.btn-gray:hover {
+  background-color: var(--gray-darker);
+}
+
+.img-responsive {
+  width: auto;
+  height: 100%;
+}
+
+.stripe-right {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  .stripe-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .stripe-left,
+  .stripe-right {
+    flex: 1;
+  }
+}
+
+.container-card {
+  padding: 3em 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-header > i {
+  font-size: 2.5rem;
+  margin-right: 0.75em;
+  color: var(--blue-darker);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card-item {
+  background-color: var(--white);
+  border-radius: 0.5em;
+  padding: 1em;
+  flex: 1;
+  flex-basis: 15em;
+  max-width: 25em;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gray);
+  text-align: center;
+}
+
+.card-sub-header {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--gray-lighter);
+  margin-bottom: 1em;
+}
+
+li {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
+  border-radius: 1em;
+  text-align: center;
+}
+
+li:hover {
+  background-color: var(--blue-darker);
+}
+
+li i {
+  margin-right: 1em;
+}
