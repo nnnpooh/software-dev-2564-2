@@ -1,0 +1,96 @@
+:root {
+  --case-color: #f2ddc1;
+  --btn-number-color: #89b5af;
+  --btn-number-color-darker: #78a19c;
+  --btn-equal-color: #b1968f;
+  --btn-equal-color-darker: #97807a;
+  --btn-command-color: #b3ae9c;
+  --btn-command-color-darker: #9c9887;
+  --gray: rgb(207, 207, 207);
+  --white: rgb(236, 236, 236);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-wrapper {
+  background-color: var(--case-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em;
+  border: 1px solid var(--gray);
+  width: 22em;
+  margin: 2em auto;
+  border-radius: 0.25em;
+}
+
+.text-wrapper {
+  background-color: var(--white);
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 1em;
+  height: 2em;
+  border-radius: 0.5em;
+}
+
+.result {
+  font-size: 1.5rem;
+  color: rgb(163, 163, 163);
+}
+.btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.btn {
+  background-color: var(--btn-number-color);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: var(--btn-number-color-darker);
+}
+
+#equal {
+  background-color: var(--btn-equal-color);
+}
+#equal:hover {
+  background-color: var(--btn-equal-color-darker);
+}
+
+#delete,
+#reset {
+  background-color: var(--btn-command-color);
+}
+
+#delete:hover,
+#reset:hover {
+  background-color: var(--btn-command-color-darker);
+}
+
+#reset {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+#delete {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#equal {
+  grid-column: 5/6;
+  grid-row: 1/3;
+}
