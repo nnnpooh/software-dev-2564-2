@@ -1,4 +1,5 @@
 let inputText = '';
+
 const btnRegularMap = {
   b1: '1',
   b2: '2',
@@ -24,6 +25,7 @@ const btnCommandMap = {
 
 const input = document.querySelector('.input');
 const result = document.querySelector('.result');
+
 const btnNumOpArray = document.querySelectorAll('.btn.regular');
 const btnCommandArray = document.querySelectorAll('.btn.command');
 
@@ -37,7 +39,9 @@ for (const btn of btnCommandArray) {
 }
 
 function handleClick(e) {
+  //   console.log(e);
   const id = e.target.getAttribute('id');
+  console.log(id);
   inputText += btnRegularMap[id];
   input.textContent = inputText;
 }
