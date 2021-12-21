@@ -48,7 +48,7 @@ body {
 }
 
 button {
-  background-color: #58c89a;
+  background-color: #235f86;
   color: white;
   padding: 14px 20px;
   border: none;
@@ -58,11 +58,6 @@ button {
 }
 
 button:hover {
-  background-color: #4baa82;
+  background-color: #11344b;
   transition: background-color 150ms;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: default;
 }
