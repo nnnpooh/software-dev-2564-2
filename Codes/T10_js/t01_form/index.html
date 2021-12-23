@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <div class="card">
+        <div class="input-wrapper">
+          <div>
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text" placeholder="" />
+            <p id="name-error"></p>
+          </div>
+
+          <div>
+            <label for="email">CMU Email</label>
+            <input name="email" id="email" type="text" placeholder="" />
+            <p id="email-error"></p>
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder=""
+            />
+            <p id="password-error"></p>
+          </div>
+
+          <div>
+            <label for="password-confirm">Confirm Password</label>
+            <input name="password" id="password-confirm" type="password" />
+            <p id="password-confirm-error"></p>
+          </div>
+        </div>
+        <button id="btn" disabled>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
