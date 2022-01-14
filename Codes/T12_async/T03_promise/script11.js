@@ -36,3 +36,26 @@
 //     });
 //   })
 //   .then((msg) => console.log(msg));
+
+// function wait(msg, time) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => resolve(msg), time);
+//   });
+// }
+
+// wait('First', 1000)
+//   .then((msg) => {
+//     console.log(msg);
+//     return wait('Second', 2000);
+//   })
+//   .then((msg) => {
+//     console.log(msg);
+//     return wait('Third', 3000);
+//   })
+//   .then((msg) => {
+//     console.log(msg);
+//     return wait('Fourth', 4000);
+//   })
+//   .then((msg) => {
+//     console.log(msg);
+//   });
