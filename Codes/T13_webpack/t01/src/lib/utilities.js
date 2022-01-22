@@ -1,2 +1,4 @@
-const data = 10;
-export { data };
+function getMessage() {
+  return "Module is working, nice!";
+}
+export { getMessage };

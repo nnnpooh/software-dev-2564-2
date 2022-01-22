@@ -1,9 +1,15 @@
-.hello {
-  color: red;
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
 }
 
-body {
-  background: url('./assets/bg.jpg');
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("./assets/bg.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }

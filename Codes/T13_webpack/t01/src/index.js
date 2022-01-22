@@ -1,17 +1,20 @@
-import { data } from './lib/utilities'; // Or import { data } from 'lib/utilities';
-import './style.css'; // Or import './style.css';
+import { getMessage } from "./lib/utilities";
+import "./style.css";
+import logoPath from "./assets/logo.png";
 
-import Icon from './assets/icon.png'; // Or import Icon from 'assets/icon.png';
+const div = document.createElement("div");
+const p1 = document.createElement("p");
+p1.textContent = "Hello from Webpack.";
+div.appendChild(p1);
 
-const pEle = document.createElement('p');
-pEle.textContent = 'This is a text!';
-document.body.appendChild(pEle);
+const p2 = document.createElement("p");
+p2.textContent = getMessage();
+div.appendChild(p2);
 
-console.log({ data });
+div.classList.add("main");
 
-pEle.classList.add('hello');
+const logo = new Image(200);
+logo.src = logoPath;
+div.appendChild(logo);
 
-const myIcon = new Image(200);
-myIcon.src = Icon;
-
-document.body.appendChild(myIcon);
+document.body.append(div);
