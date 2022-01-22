@@ -1,4 +1,10 @@
 function getMessage() {
-  return "Module is working, nice!";
+  return 'Module is working, nice!';
 }
-export { getMessage };
+
+const data = {
+  name: 'Tim',
+  age: 20,
+};
+
+export { getMessage, data };
