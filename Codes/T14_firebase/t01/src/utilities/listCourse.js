@@ -23,9 +23,15 @@ function listCourse(ul) {
 }
 
 function deleteChildNodes(element) {
-  const childNodes = element.childNodes;
-  console.log(childNodes);
-  childNodes.forEach((node) => node.remove());
+  // This does not work because the iterator can skip.
+  // see https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript#comment68491775_40606838
+  // const childNodes = element.childNodes;
+  // console.log(childNodes);
+  // childNodes.forEach((node) => node.remove());
+
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
 }
 
 export { listCourse };
